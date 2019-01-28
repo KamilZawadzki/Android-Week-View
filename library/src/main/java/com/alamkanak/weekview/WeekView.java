@@ -533,7 +533,7 @@ public class WeekView extends View {
         // Clip to paint in left column only.
         canvas.clipRect(0, mHeaderHeight + mHeaderRowPadding * 2, mHeaderColumnWidth, getHeight(), Region.Op.REPLACE);
 
-        for (int i = 0; i < 24; i++) {
+        for (int i = 6; i < 20; i++) {
             float top = mHeaderHeight + mHeaderRowPadding * 2 + mCurrentOrigin.y + mHourHeight * i + mHeaderMarginBottom;
 
             // Draw the text if its y position is not outside of the visible area. The pivot point of the text is the point at the bottom-right corner.
